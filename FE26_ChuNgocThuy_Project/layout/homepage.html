@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W Shop Converse</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap4/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick.css"/> 
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <p>W Shop <i class="fas fa-star-and-crescent"></i></p>
+        </div>
+        <div class="menu" id="myMenu">
+            <ul>
+                <li>
+                    <a href="./menu-detail.html" id="men">Men</a>
+                    <div class="sub-block">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../images/me-sne.png" alt="">
+                                    <span>Sneakers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/me-app.png" alt="">
+                                    <span>Apparel</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/me-acc.png" alt="">
+                                    <span>Accesories</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/nav-thumb-04.png" alt=""><br>
+                                    <span>New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/nav-thumb-05.png" alt=""><br>
+                                    <span>Sale</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="" id="women">Women</a>
+                    <div class="sub-block">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../images/wo-sne.png" alt="">
+                                    <span>Sneakers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/wo-app.png" alt="">
+                                    <span>Apparel</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/wo-acc.png" alt="">
+                                    <span>Accesories</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/nav-thumb-04.png" alt=""><br>
+                                    <span>New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/nav-thumb-05.png" alt=""><br>
+                                    <span>Sale</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="" id="kid">Kid</a>
+                    <div class="sub-block">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../images/kids-sneak.png" alt="">
+                                    <span>Sneakers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/kids-app.png" alt="">
+                                    <span>Apparel</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/kids-acc.png" alt="">
+                                    <span>Accesories</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/nav-thumb-04.png" alt=""><br>
+                                    <span>New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../images/nav-thumb-05.png" alt=""><br>
+                                    <span>Sale</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Stores</a></li>
+            </ul>
+            <div class="search-bar">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="user">
+                <div class="log">
+                    <a href=""><i class="fas fa-user"> Đăng nhập</i></a>
+                </div>
+                <div class="cart">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="alt-menu">
+            <div class="logo-hide">
+                <p>W Shop <i class="fas fa-star-and-crescent"></i></p>
+            </div>
+            <div class="user-hide">
+                <div class="log-hide">
+                    <a href=""><i class="fas fa-user"></i></a>
+                </div>
+                <div class="cart-hide">
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="menu-hide">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="alt-search">
+                            <form class="form-search">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="list-group-item list-group-item-action">
+                                <a href="">Men</a>
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action">
+                                <a href="">Women</a>
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action">
+                                <a href="">Kids</a>
+                            </button>
+                            <button type="button" class="list-group-item list-group-item-action">
+                                <a href="">Stores</a>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/banner.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/banner2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/banner3.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="most">
+            <hr><p>Most popular</p><hr>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li class="types">
+                    <div class="img-box">
+                        <p>Men</p>
+                        <img width="100%" src="../images/men-fa.png" alt="">    
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="item-bar item-bar-1">
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-1.jpg" alt="">
+                                <h3>Converse x Keith Haring Run Star Hike High-Top</h3>
+                                <h4># 171859V</h4>
+                                <span>VND 2,500,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-2.jpg" alt="">
+                                <h3>Converse x Keith Haring Chuck 70 High-Top</h3>
+                                <h4># 171858V</h4>
+                                <span>VND 2,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-3.jpg" alt="">
+                                <h3>Converse x Keith Haring Chuck Taylor All Star Low-Top</h3>
+                                <h4># 171860C</h4>
+                                <span>VND 1,600,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-4.jpg" alt="">
+                                <h3>Converse x Pop Trading x Miffy Jack Purcell Pro High-Top [Limited Edition]</h3>
+                                <h4># 171850C</h4>
+                                <span>VND 2,300,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-5.jpg" alt="">
+                                <h3>Converse x Pop Trading x Miffy Jack Purcell Pro High-Top [Limited Edition]</h3>
+                                <h4># 171851C</h4>
+                                <span>VND 2,300,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-6.jpg" alt="">
+                                <h3>Converse x Pop Trading x Miffy Jack Purcell Pro High-Top [Limited Edition]</h3>
+                                <h4># 171951C</h4>
+                                <span>VND 2,300,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-7.jpg" alt="">
+                                <h3>Chuck 70 Archive Paint Splatter Low-Top</h3>
+                                <h4># 170804C</h4>
+                                <span>VND 1,900,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-8.jpg" alt="">
+                                <h3>Chuck 70 Archive Paint Splatter High-Top</h3>
+                                <h4># 170802C</h4>
+                                <span>VND 2,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-9.jpg" alt="">
+                                <h3>Chuck 70 Archive Paint Splatter High-Top</h3>
+                                <h4># 170801C</h4>
+                                <span>VND 2,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-10.jpg" alt="">
+                                <h3>Chuck Taylor All Star Renew Sock Knit High-Top</h3>
+                                <h4># 170367C</h4>
+                                <span>VND 2,200,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-11.jpg" alt="">
+                                <h3>Chuck Taylor All Star Crater Knit High-Top</h3>
+                                <h4># 170869C</h4>
+                                <span>VND 2,100,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/men-12.jpg" alt="">
+                                <h3>Chuck Taylor All Star Crater Knit High-Top</h3>
+                                <h4># 170868C</h4>
+                                <span>VND 2,100,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="types">
+                    <div class="img-box">
+                        <p>Women</p>
+                        <img width="100%" src="../images/wmen-fa.png" alt="">    
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="item-bar item-bar-2">
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-1.jpg" alt="">
+                                <h3>Chuck 70 Low Low-Top</h3>
+                                <h4># 171478V</h4>
+                                <span>VND 1,900,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-2.jpg" alt="">
+                                <h3>Chuck 70 High-Top</h3>
+                                <h4># 171474V</h4>
+                                <span>VND 2,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-3.jpg" alt="">
+                                <h3>Chuck 70 Low Low-Top</h3>
+                                <h4># 171479V</h4>
+                                <span>VND 1,900,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-4.jpg" alt="">
+                                <h3>Chuck 70 High-Top</h3>
+                                <h4># 171475V</h4>
+                                <span>VND 2,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-5.jpg" alt="">
+                                <h3>Chuck 70 Low Low-Top</h3>
+                                <h4># 171570C</h4>
+                                <span>VND 1,900,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-6.jpg" alt="">
+                                <h3>Chuck 70 High-Top</h3>
+                                <h4># 171567C</h4>
+                                <span>VND 2,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-7.jpg" alt="">
+                                <h3>Chuck Talor All Star Dainty Ballet GS</h3>
+                                <h4># 571422C</h4>
+                                <span>VND 1,500,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-8.jpg" alt="">
+                                <h3>Chuck 70 Pride High-Top</h3>
+                                <h4># 170821C</h4>
+                                <span>VND 2,100,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-9.jpg" alt="">
+                                <h3>Run Star Hike Pride High-Top</h3>
+                                <h4># 170824V</h4>
+                                <span>VND 2,500,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-10.jpg" alt="">
+                                <h3>Chuck Taylor ALl Star Pride Low-Top</h3>
+                                <h4># 170823V</h4>
+                                <span>VND 1,500,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-11.jpg" alt="">
+                                <h3>Chuck 70 Seasonal Color Vintage Canvas High-Top</h3>
+                                <h4># 170790C</h4>
+                                <span>VND 2,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/wo-12.jpg" alt="">
+                                <h3>Chuck 70 Play in the World Low-Top</h3>
+                                <h4># 570789C</h4>
+                                <span>VND 1,900,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="types">
+                    <div class="img-box">
+                        <p>Kids</p>
+                        <img width="100%" src="../images/kids-fa.png" alt="">    
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="item-bar item-bar-3">
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-1.jpg" alt="">
+                                <h3>Chuck Taylor All Star Low-Top</h3>
+                                <h4># 671651C</h4>
+                                <span>VND 1,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-2.jpg" alt="">
+                                <h3>Chuck Taylor All Star Gamer Low-Top</h3>
+                                <h4># 670171C</h4>
+                                <span>VND 1,000,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-3.jpg" alt="">
+                                <h3>Chuck Taylor All Star</h3>
+                                <h4># 668462C</h4>
+                                <span>VND 1,100,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-4.jpg" alt="">
+                                <h3>Chuck Taylor All Star</h3>
+                                <h4># 668458C</h4>
+                                <span>VND 1,100,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-5.jpg" alt="">
+                                <h3>Chuck Taylor All Star Interstellar Dino's</h3>
+                                <h4># 665392C</h4>
+                                <span>VND 1,200,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-6.jpg" alt="">
+                                <h3>Chuck Taylor All Star Simple Step Gaming Camo</h3>
+                                <h4># 756117C</h4>
+                                <span>VND 850,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-7.jpg" alt="">
+                                <h3>Chuck Taylor All Star Creatures Boston x London Transport</h3>
+                                <h4># 758190V</h4>
+                                <span>VND 800,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-8.jpg" alt="">
+                                <h3>Chuck Taylor All Star Creatures Boston x London Transport</h3>
+                                <h4># 758189V</h4>
+                                <span>VND 800,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-9.jpg" alt="">
+                                <h3>Chuck Taylor All Star Simple Step Boston x London Transport</h3>
+                                <h4># 758184C</h4>
+                                <span>VND 900,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-10.jpg" alt="">
+                                <h3>Chuck Taylor All Star Simple Step Summer Fundamentals</h3>
+                                <h4># 756118C</h4>
+                                <span>VND 750,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-11.jpg" alt="">
+                                <h3>Chuck Taylor Classic Kids High-Top</h3>
+                                <h4># 327470C</h4>
+                                <span>VND 850,000</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="../images/kid-12.jpg" alt="">
+                                <h3>Chuck Taylor Classic Kids High-Top</h3>
+                                <h4># 327469C</h4>
+                                <span>VND 850,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="static-bar">
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-1.jpg" alt="">
+                    <h3>Converse x Keith Haring Run Star Hike High-Top</h3>
+                    <h4># 171859V</h4>
+                    <span>VND 2,500,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-2.jpg" alt="">
+                    <h3>Converse x Keith Haring Chuck 70 High-Top</h3>
+                    <h4># 171858V</h4>
+                    <span>VND 2,000,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-3.jpg" alt="">
+                    <h3>Converse x Keith Haring Chuck Taylor All Star Low-Top</h3>
+                    <h4># 171860C</h4>
+                    <span>VND 1,600,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-4.jpg" alt="">
+                    <h3>Converse x Pop Trading x Miffy Jack Purcell Pro High-Top [Limited Edition]</h3>
+                    <h4># 171850C</h4>
+                    <span>VND 2,300,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-5.jpg" alt="">
+                    <h3>Converse x Pop Trading x Miffy Jack Purcell Pro High-Top [Limited Edition]</h3>
+                    <h4># 171851C</h4>
+                    <span>VND 2,300,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-6.jpg" alt="">
+                    <h3>Converse x Pop Trading x Miffy Jack Purcell Pro High-Top [Limited Edition]</h3>
+                    <h4># 171951C</h4>
+                    <span>VND 2,300,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-7.jpg" alt="">
+                    <h3>Chuck 70 Archive Paint Splatter Low-Top</h3>
+                    <h4># 170804C</h4>
+                    <span>VND 1,900,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-8.jpg" alt="">
+                    <h3>Chuck 70 Archive Paint Splatter High-Top</h3>
+                    <h4># 170802C</h4>
+                    <span>VND 2,000,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-9.jpg" alt="">
+                    <h3>Chuck 70 Archive Paint Splatter High-Top</h3>
+                    <h4># 170801C</h4>
+                    <span>VND 2,000,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-10.jpg" alt="">
+                    <h3>Chuck Taylor All Star Renew Sock Knit High-Top</h3>
+                    <h4># 170367C</h4>
+                    <span>VND 2,200,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-11.jpg" alt="">
+                    <h3>Chuck Taylor All Star Crater Knit High-Top</h3>
+                    <h4># 170869C</h4>
+                    <span>VND 2,100,000</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="../images/men-12.jpg" alt="">
+                    <h3>Chuck Taylor All Star Crater Knit High-Top</h3>
+                    <h4># 170868C</h4>
+                    <span>VND 2,100,000</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot-top">
+            <p>W Shop <i class="fas fa-star-and-crescent"></i></p>
+            <ul>
+                <li>
+                    <span>Men</span>
+                   <ul>
+                        <li>
+                            <a href="">Sneakers</a>
+                        </li>
+                        <li>
+                            <a href="">Apparel</a>
+                        </li>
+                        <li>
+                            <a href="">Accesories</a>
+                        </li>
+                        <li>
+                            <a href="">New</a>
+                        </li>
+                        <li>
+                            <a href="">Sale</a>
+                        </li>
+                   </ul> 
+                </li>
+                <li>
+                    <span>Women</span>
+                    <ul>
+                         <li>
+                             <a href="">Sneakers</a>
+                         </li>
+                         <li>
+                             <a href="">Apparel</a>
+                         </li>
+                         <li>
+                             <a href="">Accesories</a>
+                         </li>
+                         <li>
+                             <a href="">New</a>
+                         </li>
+                         <li>
+                             <a href="">Sale</a>
+                         </li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Kids</span>
+                    <ul>
+                         <li>
+                             <a href="">Sneakers</a>
+                         </li>
+                         <li>
+                             <a href="">Apparel</a>
+                         </li>
+                         <li>
+                             <a href="">Accesories</a>
+                         </li>
+                         <li>
+                             <a href="">New</a>
+                         </li>
+                         <li>
+                             <a href="">Sale</a>
+                         </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul id="contact">
+                        <li>
+                            <h5>Công ty TNHH thương mại dịch vụ Thanh Xuân</h5>
+                        </li>
+                        <li>
+                            <p>Mã số thuế: 03092543258</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-map-marker-alt"></i> 147, Triều Khúc, Thanh Trì, Hà Nội</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-mobile-alt"></i> 035 459 6538</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-envelope-open-text"></i> thuy.cn205@gmail.com</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-globe"></i> www.wshop.com.vn</p>
+                        </li>
+                        <li>
+                            <p id="social">
+                                <a href="https://www.facebook.com/thuy.chungoc/"><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                                <a href=""> <i class="fab fa-twitter"></i></a>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-bot">
+            <p>code and design by <span>Chu Ngoc Thuy</span> </p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../lib/bootstrap4/popper.min.js"></script>
+<script type="text/javascript" src="../lib/bootstrap4/bootstrap.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="../js/homepage.js"></script>
+</html>
